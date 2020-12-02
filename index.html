@@ -33,6 +33,7 @@
     var actual_address = "";
 
     var map = new BMap.Map("allmap");
+    console.log(map)
     var point = new BMap.Point(116.331398, 39.897445);
     map.centerAndZoom(point, 20);
     map.enableScrollWheelZoom(true);
@@ -63,7 +64,7 @@
             });
 
         } else {
-            alert('failed' + this.getStatus());
+            console.log('failed' + this.getStatus());
         }
     }, {
         enableHighAccuracy: true
